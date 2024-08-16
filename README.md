@@ -3,7 +3,7 @@
 A basic KeyLogger tool built with HTML, CSS, and JavaScript. This project captures and displays keyboard events (keypresses) in real-time. It provides a simple user interface where users can start and stop logging keypresses.
 
 # Live Demo
-check here for live demo: 
+check here for live demo: https://abhigyan2430.github.io/BasicKeyLogger/
 
 ## Features
 
@@ -31,4 +31,4 @@ check here for live demo:
 
 1. **Clone the Repository**: Download the project files to your local machine.
    ```bash
-   git clone https://github.com/your-username/keylogger.git
+   git clone https://github.com/abhigyan2430/BasicKeyLogger.git
