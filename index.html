@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyLogger</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5vh;
+            padding: 0 5%;
+        }
+
+        h1 {
+            background-color: darkred;
+            color: white;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 6vw;
+        }
+
+        p {
+            font-size: 4vw;
+            text-align: center;
+        }
+
+        #log, #state {
+            width: 90%;
+            height: 50px;
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 4vw;
+            text-align: center;
+            margin-top: 20px;
+            background-color: #f8e408;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+
+        .button-container button {
+            font-size: 4vw;
+            padding: 10px 20px;
+            margin-top: 10px;
+            width: 80%;
+            max-width: 300px;
+            box-sizing: border-box;
+            background-color: #f77c08; /* Original color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container button:disabled {
+            cursor: not-allowed;
+            
+        }
+
+        .button-container button:hover:enabled {
+            background-color: red; /* Red color on hover */
+        }
+
+        @media (min-width: 768px) {
+            .button-container {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            #log, #state {
+                width: 45%;
+            }
+
+            .button-container button {
+                margin-right: 20px;
+                margin-top: 20px;
+                width: auto;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            h1 {
+                font-size: 3vw;
+            }
+
+            p {
+                font-size: 2vw;
+            }
+
+            #log, #state {
+                font-size: 1.5vw;
+            }
+
+            .button-container button {
+                font-size: 1.5vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>KeyLogger</h1>
+        <p>A Basic Keyboard Tapping Tool</p>
+        <div class="button-container">
+            <button id="start-btn">Start Logging Keypresses</button>
+            <button id="stop-btn" disabled>Stop Logging Keypresses</button>
+        </div>
+        <div class="button-container">
+            <div id="log"></div>
+            <div id="state"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
